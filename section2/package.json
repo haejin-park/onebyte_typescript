@@ -1,7 +1,6 @@
 {
-  "name": "section1",
+  "name": "section2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,6 +8,7 @@
   },
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "@types/node": "^20.14.5"
   }
