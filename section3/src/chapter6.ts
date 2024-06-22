@@ -8,7 +8,7 @@ type Person = {
 };
 
 // 속성이 없으면 오류 발생
-// let person : Person = {};
+// let person : Person = {}; //Type '{}' is missing the following properties from type 'Person': name, age
 
 // 타입 단언 type assertion
 let person = {} as Person; //Person으로 자동 추론됨

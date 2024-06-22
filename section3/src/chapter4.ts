@@ -54,8 +54,8 @@ let variable : number & string;
 
 type Intersection = Dog & Person;
 //  교집합 타입은 프로퍼티 하나라도 빼먹으면 안된다
-// let intersection1  : Intersection = {
-//     name: "",
-//     color: "",
-//     language: "",
-// }
+let intersection1  : Intersection = {
+    name: "",
+    color: "",
+    language: "",
+}

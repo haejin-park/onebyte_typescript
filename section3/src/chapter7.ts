@@ -29,15 +29,15 @@ function func(value: number | string | Date | null | Person) {
         console.log(value.toUpperCase());   
     } 
     // else if(typeof value === "object") { 
-    //     console.log(value.getTime()); //매개변수에 null을 추가하면 타입이 Date나 null값이 될 수 있기 때문에 에러가남
+    //     console.log(value.getTime()); //매개변수 타입에 null을 추가하면 타입이 Date나 null값이 될 수 있기 때문에 에러가남
     // }
-    // Date는 내장 클래스이므로 instanceof를 쓸 수 있따
+    // Date는 내장된 객체이며 클래스 개념과 유사하게 동작한다. 그러므로 instanceof를 쓸 수 있다
     else if(value instanceof Date) { //왼쪽의 값이 오른쪽의 instance(객체)일 경우 true 아니면 false
         console.log(value?.getTime());
     } 
 
-    // 클래스가 아니기 때문에 instanceof는 쓸 수 없다(형식만 참조하지만 값으로 참조하고 있다는)
-    // else if(value instanceof Person){ //The left-hand side of an 'instanceof' expression must be of type 'any', an object type or a type parameter.
+    // Person은 런타입에 존재하는 클래스나 객체의 인스턴스가 아니라 단순히 객체 구조를 기술하는 것이기 때문에 instanceof는 쓸 수 없다
+    // else if(value instanceof Person){ //Person' only refers to a type, but is being used as a value here.
 
     // }
     // 객체타입일 떈 in을 쓸 수있다
