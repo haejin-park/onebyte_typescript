@@ -73,15 +73,15 @@ function login(user: User){
 //사례2) 비동기 작업의 결과를 처리하는 객체 
 
 
-type AsyncTask = {
-    state: "LOADING" | "FAILED" | "SUCCESS";
-    error? : {
-        message: string;
-    };
-    response?: {
-        data: string;
-    };
-};
+// type AsyncTask = {
+//     state: "LOADING" | "FAILED" | "SUCCESS";
+//     error? : {
+//         message: string;
+//     };
+//     response?: {
+//         data: string;
+//     };
+// };
 
 // // 로딩중 -> 콘솔에 로딩중 출력
 // // 실패 -> 살패 : 에러메세지를 출력
