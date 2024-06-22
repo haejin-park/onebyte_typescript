@@ -28,7 +28,7 @@ let studentA = {
 class Student {
     //필드
     name;
-    grad;
+    grade;
     age;
 
     //생성자
@@ -97,7 +97,8 @@ class StudentDeveloper extends Student {
     favoriteSkill;
 
     //생성자
-    constructor(name, grade, age,favoriteSkill) {
+    //name, grade, age는 super함수를 호출하면 부모클래스의 생성자가 호출되서 모든 프로퍼티의 값을 설정할 수 있게된다
+    constructor(name, grade, age, favoriteSkill) {
         super(name, grade, age)
         this.favoriteSkill = favoriteSkill;
     }
