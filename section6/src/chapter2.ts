@@ -5,15 +5,12 @@ pblic private protected
 */
 
 class Employee { //클래스 이면서 타입으로도 활용이 됨
-    // public name: string;
-    // public age: number;
-    // public position: string;
 
     // private name: string;
     // protected age: number;
-    // private position: string;
+    // public position: string;
 
-    // 필드에 접근제어자가 있을 때 생성자에 접근제어자 사용 시 식별자가 중복되었다는 오류 발생(타입스크립트가 자동으로 만든다)
+    // 필드에 접근제어자가 있을 때 생성자에 접근제어자 사용 시 식별자가 중복되었다는 오류 발생(타입스크립트가 자동으로 만든다)
     //-> 생성자에 접근제어자 사용할 경우 자동으로 필드도 접근제어자가 생기고 필드 초기화도 된다. 
     //-> 필드와 초기화를 삭제해줘야한다
     constructor(
