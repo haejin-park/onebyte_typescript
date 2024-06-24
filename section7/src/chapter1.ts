@@ -6,7 +6,7 @@ function swap1<T>(a: T, b: T) {
 }
 
 //타입변수가 하나일 떄 전달하는 인수를 첫번쨰는 string, 두번쨰는 number로 하면 string으로 추론이 되므로 에러가난다. 
-// const [a,b] = swap("1",2);
+// const [a,b] = swap1("1",2);
 
 //이를 해결하기 위해서는 타입변수를 하나 더 적어줘야한다. 
 function swap2<T, U>(a: T, b: U) {
@@ -19,7 +19,7 @@ const [a,b] = swap2("1",2);
 
 /* 
 이렇게 하면 에러가 발생한다. 왜냐하면 호출 전이라 type을 잘 모르기 떄문이다. 
-그래서 데이터 타입이 unknown이 되고, undefined타입에 배열 인덱스를 쓸 수 없기 떄문이다. 그렇기 때문에 num, str 타입도 암묵적으로 any타입이 되어버린다
+그래서 unknown타입이 되고 배열 인덱스를 쓸 수 없기 때문에 암묵적으로 any타입이 되어버린다
 
 Element implicitly has an 'any' type because expression of type '0' can't be used to index type 'unknown'.
 Property '0' does not exist on type 'unknown'.
