@@ -63,9 +63,9 @@ type ThumbnailLegacy = {
     }
 }
 
-// 레코드 타입 => 키(프로퍼티)와 밸류(모든 프로퍼티에 추가가능)를 받음
-type Thumbnail = Record<"large" | "medium" | "small" | "watch", {url: string; size: number}>;
-
 type Record<K extends keyof any, V> = {
     [key in K]: V;
 }
+
+// 레코드 타입 => 키(프로퍼티)와 밸류(모든 프로퍼티에 추가가능)를 받음
+type Thumbnail = Record<"large" | "medium" | "small" | "watch", {url: string; size: number}>;
