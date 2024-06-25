@@ -14,7 +14,7 @@ let keyPair: KeyPair<string,number> = {
 };
 
 // 제네릭을 통해 하나의 인터페이스로 다양한 타입의 객체를 표현
-let kryPair2 : KeyPair<boolean, string[]> = {
+let keyPair2 : KeyPair<boolean, string[]> = {
     key:true,
     value:["1"]
 };
@@ -76,7 +76,7 @@ interface Developer {
 //     profile: Student | Developer;
 // }
 
-//만약 이렇게 함수를 만들 었는데 유저가 많아질 경우 조건문을 매번 써줘야하는 불편함이 발생 
+//만약 이렇게 함수를 만들었는데 유저가 많아질 경우 조건문을 매번 써줘야하는 불편함이 발생 
 //이를 제네릭 인터페이스로 해결할 수 있음 => <T>라는 타입 별칭 사용후 profile을 유니온 타입 대신 T로 변경
 
 interface User<T> {

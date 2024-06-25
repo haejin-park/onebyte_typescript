@@ -39,8 +39,8 @@ const person2 = {
 type Person2 = typeof person2;
 
 // 그래서 Keyof typeof person 이렇게 써줄 수 있게 된다
-function getPropertyKey3(person: Person2, key: keyof typeof person2){ 
-    return person[key];
+function getPropertyKey3(person2: Person2, key: keyof typeof person2){ 
+    return person2[key];
 }
 
 
