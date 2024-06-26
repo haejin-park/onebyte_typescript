@@ -20,6 +20,7 @@ export default function Editor(props:Props) {
         <div>
             <input value={text} onChange={onChangeInput}/> 
             <button onClick={onClickButton}>추가</button>
+            {props.children}  {/* children을 렌더링하도록 추가 */}
         </div>
     );
 }
