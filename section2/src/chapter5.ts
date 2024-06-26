@@ -21,11 +21,11 @@ const user1 = {
 }
 const user2 = {
     name: '홍길동',
-    role: Role.USER // 0 일반유저
+    role: Role.USER // 10 일반유저
 }
 const user3 = {
     name: "아무개",
-    role: Role.GUEST // 0 게스트
+    role: Role.GUEST // 11 게스트
 }
 console.log(user1,user2,user3);
 
