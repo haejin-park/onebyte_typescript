@@ -19,7 +19,7 @@ const [a,b] = swap2("1",2);
 
 /* 
 이렇게 하면 에러가 발생한다. 왜냐하면 호출 전이라 type을 잘 모르기 떄문이다. 
-그래서 unknown타입이 되고 배열 인덱스를 쓸 수 없기 때문에 암묵적으로 any타입이 되어버린다
+그래서 unknown타입이 되고 배열 인덱스를 쓸 수 없기 때문에 암묵적으로 any타입을 가지고 있음
 
 Element implicitly has an 'any' type because expression of type '0' can't be used to index type 'unknown'.
 Property '0' does not exist on type 'unknown'.

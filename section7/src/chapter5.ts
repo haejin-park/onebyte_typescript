@@ -41,24 +41,7 @@ interface Post {
     content: string;
 }
 
-// function fetchPost(){
-//     return new Promise<Post>((resolve, reject) => { //Promise가 클래스이기 때문에 이렇게 타입으로도 활용할 수 있다는 것을 알 수 있음
-//         setTimeout(() => {
-//             resolve({
-//                 id: 1,
-//                 title: '게시글 제목',
-//                 content: '게시글 컨텐츠',
-//             })
-//         },3000);
-//     });
-// } 
-// const postRequest = fetchPost();
-
-// postRequest.then((post) => {
-//     post.id //post가 unknown타입이되면 .표기법을 쓸 수 없음 
-// })
-
-
+// post가 unknown타입이되면 .표기법을 쓸 수 없음 
 // .표기법 쓸 수 있게 하는 방법
 // 방법1. 타입 변수 할당해주기 Promise<Post>
 function fetchPost1() {
